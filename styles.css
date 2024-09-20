@@ -62,29 +62,31 @@ main {
 
 /* Botones de redes sociales */
 .social-links {
-    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .social-links a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #fff;
-    font-size: 24px;
     display: inline-block;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
+    width: 40px; /* Tamaño ajustado para los botones */
+    height: 40px;
     border-radius: 50%;
-    text-align: center;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
 }
 
-.social-links a.youtube { background-color: #FF0000; }
-.social-links a.twitter { background-color: #1DA1F2; }
-.social-links a.linkedin { background-color: #0077B5; }
-.social-links a.instagram { background-color: #E1306C; }
-
 .social-links a:hover {
-    opacity: 0.8;
+    background-color: #ddd;
+}
+
+.social-links img {
+    width: 20px; /* Tamaño ajustado para los iconos */
+    height: 20px;
 }
 
 /* Media Queries para Responsividad */
@@ -130,5 +132,29 @@ main {
         height: 35px;
         line-height: 35px;
         font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .social-links a {
+        width: 35px; /* Ajustes para pantallas medianas */
+        height: 35px;
+    }
+
+    .social-links img {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .social-links a {
+        width: 30px; /* Ajustes para pantallas pequeñas */
+        height: 30px;
+    }
+
+    .social-links img {
+        width: 15px;
+        height: 15px;
     }
 }
