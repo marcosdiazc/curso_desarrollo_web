@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto - Marcos Díaz</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="stylesheet" href="src/styles/footer_header.css">
+    <link rel="stylesheet" href="src/styles/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -18,15 +21,52 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
+    
+    <section class="contactSection">
+        <div class="contactContainer">
             <h2>Contacto</h2>
-                <h3>En construccion</h3>
-        </section>
-    </main>
+            <p class="subtitle">
+              <span class="greyText">¿Quieres charlar?</span> 
+              <span>Dejame tu consulta</span>
+            </p>
+            <form class="contactForm">
+                <div class="inputGroup">
+                    <label for="name">Nombre y Apellido</label>
+                    <input type="text" placeholder="Marcos Diaz" id="name" name="name">
+                </div>
+                <div class="inputGroup">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" placeholder="marcosdiazc@gmail.com" id="email" name="email">
+                </div>
+                <div class="inputGroup">
+                    <label for="phone">Teléfono</label>
+                    <input type="tel" placeholder="(5411) 0912 2018" id="phone" name="phone">
+                </div>
+                <div class="inputGroup">
+                    <label for="message">Consulta</label>
+                    <textarea placeholder="Escribe tu mensaje" id="message" name="message"></textarea>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="terms" name="terms">
+                    <label for="terms">
+                      Acepto los 
+                      <span class="highlightedText">Términos y condiciones</span> de Grupo 03 y estoy de acuerdo con su 
+                      <span class="highlightedText">Política de Privacidad</span>.
+                  </label>
+                </div>
+                <button type="submit" class="submitButton">CONSULTAR</button>
+            </form>
+        </div>
+      </section>
+
     <footer>
-        <p>&copy; 2024 Marcos Díaz. Todos los derechos reservados.</p>
-        <p>Contacto: <a href="mailto:marcos.diaz@email.com">marcos.diaz@email.com</a></p>
+        <div class="footerContent">
+            <ul>
+                <li><a href="privacy.html" class="footerLink">Política de Privacidad</a></li>
+                <li><a href="terms.html" class="footerLink">Términos y Condiciones</a></li>
+            </ul>
+            <p>&copy; Hecho por Marcos Diaz</p>
+        </div>
     </footer>
 </body>
 </html>

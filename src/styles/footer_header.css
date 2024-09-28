@@ -1,0 +1,85 @@
+:root{
+    --color-1: #00509c;
+    --text-color: #000000;
+    --primary-color: #00509c;
+    --hover-color: #0171c2;
+    --naranja-pastel: #FF8C66;
+}
+
+nav, footer {
+    height: 70px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav p, footer p {
+    padding-left: 20px;
+    width: 100%;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+nav ul, footer ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav li, footer li {
+    white-space: nowrap;
+}
+
+nav a, footer a {
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+footer img {
+    width: 40px;
+    margin-left: 30px;
+}
+
+/* Footer estilos */
+.footerContent {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    text-align: center;
+}
+
+/* Responsivo */
+@media(max-width: 920px) {
+    nav ul, footer ul {
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .navLink, .footerLink {
+        width: 100%;
+        padding: 20px 30px;
+        justify-content: flex-start;
+    }
+
+    .footerContent {
+        display: block;
+        text-align: center;
+    }
+}
+
+footer {
+    background-color: var(--naranja-pastel);
+    color: #FFFFFF;
+    width: 100%;
+}
+
+nav {
+    background-color: var(--naranja-pastel);  /* Un azul profundo que resalta */
+    color: #ffffff;  /* Texto blanco */
+}

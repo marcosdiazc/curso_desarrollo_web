@@ -1,0 +1,124 @@
+/* Sección de contacto */
+.contactSection {
+    padding-top: 100px; /* Añade espacio entre el header y la sección */
+    margin-top: 0;
+}
+
+.contactContainer {
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    color: #000; /* Color negro para "Contacto" */
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 10px; /* Reduce el espacio debajo de "Contacto" */
+}
+
+/* Texto separado con colores */
+.subtitle {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.greyText {
+    color: rgba(0, 0, 0, 0.5); /* Color gris para "¿Tienes una idea?" */
+}
+
+/* Estilos de los inputs */
+.inputGroup {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.inputGroup label {
+    display: block;
+    text-align: left;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.50);
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #000;
+}
+
+textarea {
+    height: 100px;
+}
+
+/* Estilos para el checkbox y el texto */
+.checkbox {
+    display: flex;
+    align-items: flex-start; /* Alinea el checkbox con el texto */
+    gap: 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.60); /* Color gris oscuro */
+    line-height: 120%;
+    letter-spacing: -0.32px;
+    margin-bottom: 20px;
+}
+
+
+.highlightedText {
+    color: #FFA07A; 
+}
+
+.checkbox input {
+    margin-top: 4px; 
+    width: 18px;
+    height: 18px;
+}
+
+/* Botón de envío */
+.submitButton {
+    background: #FFA07A;
+    color: #FFF;
+    padding: 19px 80px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto;
+}
+
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    .contactContainer {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .submitButton {
+        padding: 15px 60px;
+        max-width: 100%;
+    }
+}
+

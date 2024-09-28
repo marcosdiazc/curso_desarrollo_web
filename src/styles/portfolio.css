@@ -1,0 +1,86 @@
+/* General */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+main {
+    width: 100%;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0px 40px;
+    text-align: center;
+}
+
+/* Títulos */
+h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #FF7043; /* Color naranja más oscuro */
+}
+
+/* Grid layout para las tarjetas */
+.projectGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajusta las columnas de forma responsive */
+    gap: 20px; /* Espacio entre las tarjetas */
+    margin-top: 30px;
+}
+
+/* Tarjetas de proyectos */
+.projectCard {
+    background-color: #fff;
+    border: 1px solid #FF7043; /* Borde naranja suave */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+/* Hover para las tarjetas */
+.projectCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Títulos de los proyectos */
+.projectCard h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #FF7043;
+}
+
+/* Descripción del proyecto */
+.projectCard p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Enlace al proyecto */
+.projectLink {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #FF7043;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover para el enlace */
+.projectLink:hover {
+    background-color: #FF8C66; /* Un poco más claro */
+}
+
+/* Responsivo */
+@media (max-width: 400px) {
+    .projectGrid {
+        grid-template-columns: 1fr; /* 1 columna para pantallas pequeñas */
+    }
+}

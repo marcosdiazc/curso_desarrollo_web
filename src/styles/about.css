@@ -1,0 +1,73 @@
+/* Clase general para centrar todo el contenido */
+.centeredContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Eliminar los puntos de las listas en todos los niveles */
+.noBulletPoints, .noBulletPoints ul, .noBulletPoints li {
+    list-style-type: none;
+    padding-left: 0; /* Elimina el padding de las listas */
+    margin: 0;
+}
+
+/* Añadir espacio entre los elementos de la lista */
+.noBulletPoints li {
+    margin-bottom: 10px; /* Espacio entre los elementos de la lista */
+}
+
+/* Estilos para las secciones */
+.aboutSection, .experienceSection {
+    margin-bottom: 40px;
+}
+
+.experienceItem {
+    margin-bottom: 30px;
+}
+
+.experienceItem h3 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Botones de CV y LinkedIn */
+.cvButton, .linkedinButton {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cvButton:hover, .linkedinButton:hover {
+    background-color: #45a049;
+}
+
+/* Estilo del botón */
+.styledButton {
+    display: inline-block;
+    background-color: var(--naranja-pastel); /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Quitar subrayado */
+    font-weight: 600; /* Texto en negrita */
+    transition: background-color 0.3s ease; /* Transición suave para hover */
+}
+
+/* Hover: Cambia ligeramente el color cuando pases el ratón por encima */
+.styledButton:hover {
+    background-color: #FF7043; /* Un poco más oscuro al hacer hover */
+    cursor: pointer; /* Cambiar el cursor al de mano */
+}
+
+
+

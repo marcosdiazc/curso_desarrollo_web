@@ -1,0 +1,62 @@
+/* Título de la sección Servicios */
+h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #FF7043; /* Naranja oscuro */
+}
+
+/* Grid layout para las tarjetas de servicios */
+.servicesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajuste responsive */
+    gap: 20px; /* Espacio entre las tarjetas */
+    margin-top: 30px;
+}
+
+/* Tarjetas de servicios */
+.serviceCard {
+    background-color: #fff;
+    border: 1px solid #FF7043; /* Borde naranja */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    overflow: hidden; /* Asegura que las imágenes no se salgan del contenedor */
+}
+
+/* Imágenes dentro de las tarjetas */
+.serviceImage {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #FF7043; /* Línea de separación */
+    border-radius: 10px 10px 0 0; /* Bordes redondeados solo en la parte superior */
+    margin-bottom: 15px;
+}
+
+/* Hover para las tarjetas */
+.serviceCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Título de cada servicio */
+.serviceCard h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #FF7043;
+}
+
+/* Descripción del servicio */
+.serviceCard p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    .servicesGrid {
+        grid-template-columns: 1fr; /* 1 columna para pantallas pequeñas */
+    }
+}

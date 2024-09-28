@@ -4,35 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Mí - Marcos Díaz</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="stylesheet" href="src/styles/footer_header.css">
+    <link rel="stylesheet" href="src/styles/about.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="about.html">Sobre Mí</a></li>
-                <li><a href="portfolio.html">Portafolio</a></li>
-                <li><a href="services.html">Servicios</a></li>
-                <li><a href="contact.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Sobre Mí</h2>
-            <p>Soy Marcos Díaz, Data Analyst especializado en la detección y prevención de fraude, con sólida experiencia en el manejo de grandes volúmenes de datos. A lo largo de mi carrera, he trabajado con diversas empresas ayudándolas a optimizar sus procesos y a tomar decisiones informadas mediante análisis de datos avanzados.</p>
-            <h3>Formación Académica</h3>
-            <ul>
-                <li>Licenciatura en Informática - Universidad UADE</li>
-            </ul>
-            <h3>Objetivos Profesionales</h3>
-            <p>Mi objetivo es seguir desarrollando soluciones analíticas que contribuyan a la prevención del fraude y a la mejora de los procesos empresariales mediante la utilización de herramientas innovadoras y metodologías de análisis de datos.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Marcos Díaz. Todos los derechos reservados.</p>
-        <p>Contacto: <a href="mailto:marcos.diaz@email.com">marcos.diaz@email.com</a></p>
-    </footer>
+    <div>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="about.html">Sobre Mí</a></li>
+                    <li><a href="portfolio.html">Portafolio</a></li>
+                    <li><a href="services.html">Servicios</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="centeredContent">
+            <section class="aboutSection">
+                <h1>Sobre Mí</h1>
+                <p>Soy Marcos, Analytics Engineer, con experiencia en modelado de datos, ingenieria analitica y analisis de datos</p>
+                
+                <h3>Mi Trayectoria</h3>
+                <p>Actualmente, trabajo en el equipo de promociones y doy clases de data en Coderhouse, compartiendo mi pasión por los datos con futuros profesionales del análisis. </p>
+    
+                <h3>Formación Académica</h3>
+                <ul class="noBulletPoints">
+                    <li>Licenciatura en Gestión de la Tecnología - Universidad UADE</li>
+                </ul>
+    
+                <h3>Habilidades</h3>
+                <ul class="noBulletPoints">
+                    <li>SQL, dbt, AWS Athena, Snowflake</li>
+                    <li>Product Analytics en Amplitude</li>
+                    <li>Python</li>
+                </ul>
+    
+                <h3>Objetivos Profesionales</h3>
+                <p>Mi objetivo es seguir desarrollando soluciones analíticas que contribuyan a la prevención del fraude y a la mejora de los procesos empresariales mediante la utilización de herramientas innovadoras y metodologías de análisis de datos.</p>
+                
+                <a href="https://drive.google.com/file/d/1rRKn5joz6zhvMzxzFGvvLcLCKSbyUmEy/view?usp=sharing" target="_blank" class="styledButton">
+                    Ver CV
+                </a>
+    
+                <a href="https://www.linkedin.com/in/marcosdiazc/" target="_blank" class="styledButton">
+                    LinkedIn
+                </a>
+            </section>
+    
+            <!-- Sección de experiencia profesional -->
+            <section id="experience" class="experienceSection">
+                <h2>Experiencia Profesional</h2>
+                <div class="experienceList">
+                    <div class="experienceItem">
+                        <h3>Content Creator - Tengo Data</h3>
+                        <p>ene. 2024 - actualidad · 9 meses</p>
+                        <p>Afiliate partner streamer en Twitch @tengodata</p>
+                    </div>
+    
+                    <div class="experienceItem">
+                        <h3>Ssr Data Analyst - MODO</h3>
+                        <p>jul. 2023 - actualidad · 1 año 3 meses</p>
+                        <ul class="noBulletPoints">
+                            <li>Desarrollo del datamart de promociones.</li>
+                            <li>Analytics dentro del negocio de promociones.</li>
+                            <li>Implementación de productos basados en datos.</li>
+                            <li>Modelado de datos desarrollado en dbt y Amazon Athena.</li>
+                            <li>Explotación de datos en Amazon QuickSight y Superset.</li>
+                            <li>Control de versiones en Git.</li>
+                            <li>Metodología de trabajo Scrum.</li>
+                        </ul>
+                    </div>
+    
+                    <div class="experienceItem">
+                        <h3>Professor Data Analytics - Coderhouse</h3>
+                        <p>mar. 2023 - sept. 2024 · 1 año 7 meses</p>
+                        <ul class="noBulletPoints">
+                            <li>Se dictan módulos de SQL Server y teoría de Modelado de Datos.</li>
+                            <li>Se dictan módulos de visualización de datos en Microsoft Power BI.</li>
+                        </ul>
+                    </div>
+    
+                    <div class="experienceItem">
+                        <h3>Data Analyst - Telecom Argentina</h3>
+                        <p>ago. 2021 - jul. 2022 · 1 año</p>
+                        <ul class="noBulletPoints">
+                            <li>Enriquecimiento y normalización de bases de datos.</li>
+                            <li>Desarrollo de dashboards y construcción de KPIs.</li>
+                            <li>Generación y automatización de informes.</li>
+                            <li>Gestión de grandes volúmenes de datos y técnicas de optimización.</li>
+                            <li>Experimentación con modelos de Machine Learning predictivos.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footerContent">
+                <ul>
+                    <li><a href="privacy.html" class="footerLink">Política de Privacidad</a></li>
+                    <li><a href="terms.html" class="footerLink">Términos y Condiciones</a></li>
+                </ul>
+                <p>&copy; Hecho por Marcos Diaz</p>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>

@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio - Marcos Díaz</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="stylesheet" href="src/styles/footer_header.css">
+    <link rel="stylesheet" href="src/styles/portfolio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -18,19 +21,53 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
-            <h2>Portafolio</h2>
-            <article>
-                <h3>Proyecto 1: Sistema de Detección de Fraude</h3>
-                <p>Descripción: Desarrollé un modelo predictivo que permite identificar transacciones fraudulentas con alta precisión. Utilicé técnicas de Machine Learning y análisis de grandes volúmenes de datos.</p>
-                <p><a href="enlace-proyecto-1">Ver Proyecto</a></p>
-            </article>
-        </section>
-    </main>
+    <div class="projectGrid">
+        <article class="projectCard">
+            <h3>Sistema de Detección de Fraude</h3>
+            <p><strong>Descripción:</strong> Desarrollé un modelo predictivo para identificar transacciones fraudulentas con alta precisión. Utilicé técnicas de Machine Learning como regresión logística, árboles de decisión y Random Forest, y analicé grandes volúmenes de datos con Python y bibliotecas como Scikit-learn y Pandas.</p>
+            <p><strong>Herramientas y tecnologías:</strong> Python, Scikit-learn, Pandas, Jupyter Notebook</p>
+            <p><a href="enlace-proyecto-1" target="_blank" class="projectLink">Ver Proyecto</a></p>
+        </article>
+
+        <article class="projectCard">
+            <h3>Arquitectura de Data Warehouse con dbt</h3>
+            <p><strong>Descripción:</strong> Implementé un Data Warehouse utilizando dbt para transformar y modelar datos empresariales. Construí modelos de datos optimizados, validé calidad de datos, y generé reportes automáticos usando Amazon Redshift.</p>
+            <p><strong>Herramientas y tecnologías:</strong> dbt, Amazon Redshift, SQL, Git</p>
+            <p><a href="enlace-proyecto-2" target="_blank" class="projectLink">Ver Proyecto</a></p>
+        </article>
+
+        <article class="projectCard">
+            <h3>Análisis Predictivo de Ventas</h3>
+            <p><strong>Descripción:</strong> Creé un modelo de predicción de ventas basado en series temporales. Analicé tendencias históricas de ventas utilizando modelos ARIMA y Prophet, con el objetivo de ayudar a la empresa a tomar decisiones estratégicas para aumentar ingresos.</p>
+            <p><strong>Herramientas y tecnologías:</strong> Python, Pandas, Prophet, ARIMA, Jupyter Notebook</p>
+            <p><a href="enlace-proyecto-3" target="_blank" class="projectLink">Ver Proyecto</a></p>
+        </article>
+
+        <article class="projectCard">
+            <h3>Dashboard de KPIs de Marketing</h3>
+            <p><strong>Descripción:</strong> Diseñé e implementé un dashboard interactivo de KPIs de marketing en Superset, que permite a los equipos analizar métricas clave de campañas de marketing en tiempo real. Utilicé un modelo de datos basado en dbt y Snowflake para garantizar la eficiencia.</p>
+            <p><strong>Herramientas y tecnologías:</strong> dbt, Snowflake, Superset, SQL</p>
+            <p><a href="enlace-proyecto-4" target="_blank" class="projectLink">Ver Proyecto</a></p>
+        </article>
+
+        <article class="projectCard">
+            <h3>Modelo de Clasificación de Clientes</h3>
+            <p><strong>Descripción:</strong> Implementé un modelo de clasificación de clientes utilizando técnicas de clustering (K-means) y segmentación. El modelo permitió a la empresa identificar distintos grupos de clientes y aplicar estrategias personalizadas de marketing.</p>
+            <p><strong>Herramientas y tecnologías:</strong> Python, Scikit-learn, Matplotlib, K-means</p>
+            <p><a href="enlace-proyecto-5" target="_blank" class="projectLink">Ver Proyecto</a></p>
+        </article>
+    </div>
+</section>
+</main>
+    
     <footer>
-        <p>&copy; 2024 Marcos Díaz. Todos los derechos reservados.</p>
-        <p>Contacto: <a href="mailto:marcos.diaz@email.com">marcos.diaz@email.com</a></p>
+        <div class="footerContent">
+            <ul>
+                <li><a href="privacy.html" class="footerLink">Política de Privacidad</a></li>
+                <li><a href="terms.html" class="footerLink">Términos y Condiciones</a></li>
+            </ul>
+            <p>&copy; Hecho por Marcos Diaz</p>
+        </div>
     </footer>
 </body>
 </html>

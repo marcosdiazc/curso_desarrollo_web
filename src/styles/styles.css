@@ -1,0 +1,116 @@
+/* Variables globales */
+:root{
+    --color-1: hsl(200, 80%, 40%);  
+    --text-color: #333333;  
+    --primary-color: #6c63ff;  
+    --hover-color: #5a54d4;  
+    --accent-color: #ff6584;  
+}
+
+
+/* Reset básico para margen y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tipografía global */
+body {
+    font-family: "Poppins", sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Estilos generales de enlaces */
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--hover-color);
+}
+
+/* Contenedores generales */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilos genéricos que afectan a toda la página */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* Hacemos que el body ocupe toda la altura de la ventana */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* El contenedor principal ocupa todo el espacio restante */
+main {
+    flex: 1; /* Ocupa el espacio disponible en la página */
+}
+
+ 
+
+
+/* seccion about */
+.experienceSection {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.experienceList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.experienceItem {
+    margin-bottom: 30px;
+}
+
+.experienceItem h3 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.experienceItem p {
+    margin-bottom: 5px;
+}
+
+.experienceItem ul {
+    text-align: left;
+    list-style-type: disc;
+    margin: 0 auto;
+    display: inline-block;
+    padding-left: 20px;
+}
+
+
+nav {
+    background-color: #ff7f50;  /* Un azul profundo que resalta */
+    color: #ffffff;  /* Texto blanco */
+}
+
+ footer {
+    text-align: center;
+    margin-top: auto;
+    background-color: var(--naranja-pastel);;
+    color: #FFFFFF;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;  
+}
+ 

@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios - Marcos Díaz</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="stylesheet" href="src/styles/footer_header.css">
+    <link rel="stylesheet" href="src/styles/services.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -21,16 +24,43 @@
     <main>
         <section>
             <h2>Servicios</h2>
-            <ul>
-                <li>Desarrollo de modelos predictivos de fraude</li>
-                <li>Análisis de grandes volúmenes de datos</li>
-                <li>Optimización de procesos analíticos</li>
-            </ul>
+    
+            <div class="servicesGrid">
+                <article class="serviceCard">
+                    <img src="src/images/consultoria1.jpg" alt="Consultoría en Análisis de Datos" class="serviceImage">
+                    <h3>Consultoría en Análisis de Datos</h3>
+                    <p>Ayudo a empresas a transformar sus datos en decisiones estratégicas a través de análisis detallados y personalizados. Utilizo herramientas avanzadas como SQL, Python y Machine Learning para generar insights valiosos.</p>
+                </article>
+    
+                <article class="serviceCard">
+                    <img src="src/images/machinelearning.jpg" alt="Desarrollo de Modelos Predictivos" class="serviceImage">
+                    <h3>Desarrollo de Modelos Predictivos</h3>
+                    <p>Diseño e implemento modelos de Machine Learning para predicción y clasificación, adaptados a las necesidades específicas de cada negocio, mejorando la precisión de decisiones operativas y estratégicas.</p>
+                </article>
+    
+                <article class="serviceCard">
+                    <img src="src/images/datawarehouse.png" alt="Diseño de Data Warehouse con dbt" class="serviceImage">
+                    <h3>Diseño de Data Warehouse con dbt</h3>
+                    <p>Ofrezco la creación y optimización de arquitecturas de Data Warehouse con dbt, asegurando la integración y transformación eficiente de datos para empresas que necesitan manejar grandes volúmenes de información.</p>
+                </article>
+    
+                <article class="serviceCard">
+                    <img src="src/images/visualizacion.jpg" alt="Visualización de Datos y Dashboards" class="serviceImage">
+                    <h3>Visualización de Datos y Dashboards</h3>
+                    <p>Diseño dashboards interactivos y visualizaciones personalizadas para ayudar a las empresas a monitorear KPIs clave y tomar decisiones basadas en datos en tiempo real utilizando herramientas como Superset y Power BI.</p>
+                </article>
+            </div>
         </section>
     </main>
+    
     <footer>
-        <p>&copy; 2024 Marcos Díaz. Todos los derechos reservados.</p>
-        <p>Contacto: <a href="mailto:marcos.diaz@email.com">marcos.diaz@email.com</a></p>
+        <div class="footerContent">
+            <ul>
+                <li><a href="privacy.html" class="footerLink">Política de Privacidad</a></li>
+                <li><a href="terms.html" class="footerLink">Términos y Condiciones</a></li>
+            </ul>
+            <p>&copy; Hecho por Marcos Diaz</p>
+        </div>
     </footer>
 </body>
 </html>

@@ -1,0 +1,134 @@
+/*home presentacion foto y section*/
+
+.profileSection {
+    text-align: center;
+    padding: 20px;
+}
+
+.profileImg {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.profileImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profileImg:hover {
+    transform: scale(1.1);
+}
+
+h1 {
+    font-size: 28px;
+    font-family: "Poppins", sans-serif;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+
+a {
+    font-family: "Poppins", sans-serif;
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--hover-color);
+}
+
+.socialLinks {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.socialLinks img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.socialLinks img:hover {
+    transform: scale(1.2);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .profileSection {
+        padding: 10px;
+    }
+
+    .socialLinks {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .profileImg {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* about y cv */
+
+.cvButton {
+    display: inline-block;
+    background-color: var(--accent-color, #19A1C4); /* Color celeste de acento */
+    color: #FFF; /* Texto en blanco */
+    padding: 12px 24px; /* Ajusta el tamaño del botón */
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    border-radius: 8px; /* Bordes redondeados */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.cvButton:hover {
+    background-color: #FFA07A; /* Color de acento más oscuro al hacer hover */
+}
+
+/* Estilo del botón */
+.styledButton {
+    display: inline-block;
+    background-color: var(--naranja-pastel); /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Quitar subrayado */
+    font-weight: 600; /* Texto en negrita */
+    transition: background-color 0.3s ease; /* Transición suave para hover */
+}
+
+/* Hover: Cambia ligeramente el color cuando pases el ratón por encima */
+.styledButton:hover {
+    background-color: #FF7043; /* Un poco más oscuro al hacer hover */
+    cursor: pointer; /* Cambiar el cursor al de mano */
+}
